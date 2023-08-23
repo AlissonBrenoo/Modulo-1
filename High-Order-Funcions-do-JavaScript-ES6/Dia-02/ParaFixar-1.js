@@ -1,15 +1,10 @@
 const people = [
-  { name: 'Mateus', age: 18 },
-  { name: 'José', age: 16 },
-  { name: 'Ana', age: 23 },
-  { name: 'Cláudia', age: 20 },
-  { name: 'Bruna', age: 19 },
+  { name: 'João', age: 25 },
+  { name: 'Maria', age: 30 },
+  { name: 'Pedro', age: 20 },
+  { name: 'Ana', age: 35 },
 ];
 
-people.sort((a, b) => {
-    let ageA = a.age;
-    let ageB = b.age;
-    return ageA - ageB;    
-});
+const filterAge = people.filter((arrayPeoples) => arrayPeoples.age >= 30);
 
-console.log(people);
+console.log(filterAge);
